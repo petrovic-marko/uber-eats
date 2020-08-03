@@ -141,4 +141,8 @@ section:nth-of-type(even) {
   transform: skew(0deg, 11.77deg);
 }
 
+.header h1 {
+  color: blue;
+}
+
 /*# sourceMappingURL=style.css.map */
