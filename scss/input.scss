@@ -126,15 +126,37 @@ textarea {
 	resize: none;
 }
 
+header {
+	padding: 200px 0;
+	transform: skew(0deg, -11.77deg);
+	background-color: $clr-bg-gray;
+}
+
+footer {
+	padding-top: 180px;
+	padding-bottom: 20px;
+	background-color: $clr-bg-footer;
+	position: relative;
+	z-index: 3;
+
+	& .container {
+		transform: skew(0deg, 0deg);
+	}
+}
+
 section {
 	padding: 200px 0;
 	transform: skew(0deg, -11.77deg);
+	z-index: 1;
 
-	&:nth-of-type(odd) {
+	&:nth-of-type(even) {
 		background-color: $clr-bg-gray;
 	}
-	&:nth-of-type(even) {
+	&:nth-of-type(odd) {
 		background-color: $clr-white;
+	}
+	&:last-of-type {
+		padding-bottom: 400px;
 	}
 }
 

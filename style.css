@@ -122,15 +122,36 @@ textarea {
   resize: none;
 }
 
+header {
+  padding: 200px 0;
+  transform: skew(0deg, -11.77deg);
+  background-color: #f4f5f7;
+}
+
+footer {
+  padding-top: 180px;
+  padding-bottom: 20px;
+  background-color: #262626;
+  position: relative;
+  z-index: 3;
+}
+footer .container {
+  transform: skew(0deg, 0deg);
+}
+
 section {
   padding: 200px 0;
   transform: skew(0deg, -11.77deg);
-}
-section:nth-of-type(odd) {
-  background-color: #f4f5f7;
+  z-index: 1;
 }
 section:nth-of-type(even) {
+  background-color: #f4f5f7;
+}
+section:nth-of-type(odd) {
   background-color: #ffffff;
+}
+section:last-of-type {
+  padding-bottom: 400px;
 }
 
 .container {
