@@ -37,9 +37,10 @@ body {
 	color: $clr-black;
 	background-color: $clr-bg-gray;
 	font-size: 21px;
+	border: 1px solid black;
 }
 
-h1 {
+.h2 {
 	font: 5rem/7rem $font-family-global;
 	font-weight: 700;
 	letter-spacing: -1px;
@@ -59,7 +60,7 @@ h1 {
 	}
 }
 
-h2 {
+.h3 {
 	font: 3.5rem/7rem $font-family-global;
 	font-weight: 700;
 	letter-spacing: -1px;
@@ -127,7 +128,7 @@ textarea {
 }
 
 header {
-	padding: 200px 0;
+	// padding: 200px 0;
 	transform: skew(0deg, -11.77deg);
 	background-color: $clr-bg-gray;
 }
@@ -145,9 +146,9 @@ footer {
 }
 
 section {
+	position: relative;
 	padding: 200px 0;
 	transform: skew(0deg, -11.77deg);
-	z-index: 1;
 
 	&:nth-of-type(even) {
 		background-color: $clr-bg-gray;
@@ -167,12 +168,37 @@ section {
 	width: 100%;
 	padding: 0px 9px;
 	margin: auto;
-
 	transform: skew(0deg, 11.77deg);
 }
 
-.header{
-	h1{
-		color: blue;
+.site-header{
+	// position: relative;
+	max-width: 100%;
+	z-index: 5;
+	.content-wrapper{
+		// position: relative;
+		width: 100%;
 	}
+	.header-content{
+		max-width: 40%;
+		position: relative;
+		.h1{
+		}
+		span{
+			color: $clr-main;
+		}
+	}
+	//HEADER BACKGROUND
+	&::after{
+		content: "";
+		background-image: url(./img/bihead.png);
+		width: 100%;
+		background-size: contain;
+		background-repeat: no-repeat;
+		position: absolute;
+		top: 0%;
+		right: 0%;
+		padding-top: 100%;
+	}
+
 }
