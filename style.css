@@ -571,10 +571,10 @@ section > * {
 .section-6 .deliveries-wrapper {
   display: flex;
   margin-left: -60px;
-  padding-left: 200px;
 }
 .section-6 .deliveries-wrapper .col-1-2 {
   padding-left: 60px;
+  margin-bottom: 60px;
   width: 50%;
 }
 .section-6 .deliveries-wrapper .col-1-2 .delivery-icon {
@@ -586,6 +586,16 @@ section > * {
 }
 .section-6 .deliveries-wrapper .col-1-2 h3 {
   color: #5fb709;
+}
+@media (max-width: 900px) {
+  .section-6 .deliveries-wrapper .col-1-2 {
+    width: 100%;
+  }
+}
+@media (max-width: 900px) {
+  .section-6 .deliveries-wrapper {
+    flex-direction: column;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
