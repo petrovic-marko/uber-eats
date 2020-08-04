@@ -2,6 +2,7 @@
   font-family: 'Kayak Sans';
   src: url('fonts/Kayak Sans Regular.otf');
 }
+
 $font-family-global: 'Kayak Sans', sans-serif;
 
 $clr-white: #ffffff; // section-bg, footer-text, button-text
@@ -12,8 +13,9 @@ $clr-text-input: #585858; //input-text-color
 
 $clr-main: #5fb709; // lead-text, button-bg
 
-$breakpoint-large: 1200px;
-$breakpoint-medium: 800px;
+$breakpoint-large: 1500px;
+$breakpoint-medium: 900px;
+$breakpoint-medium-small: 700px;
 $breakpoint-small: 500px;
 
 * {
@@ -43,19 +45,19 @@ h2 {
 	font: 5rem/7rem $font-family-global;
 	font-weight: 700;
 	letter-spacing: -1px;
-	margin: 0 0 40px;
+	margin: 0 0 50px;
 
 	@media (max-width: $breakpoint-large) {
 		font-size: 4rem;
 		line-height: 5rem;
 	}
 	@media (max-width: $breakpoint-medium) {
-		font-size: 3rem;
+		font-size: 3.5rem;
 		line-height: 4rem;
 	}
 	@media (max-width: $breakpoint-small) {
-	  font-size: 2.5rem;
-	  line-height: 3rem;
+	  // font-size: 2.5rem;
+	  // line-height: 3rem;
 	}
 }
 
@@ -154,30 +156,32 @@ section {
 	&:nth-of-type(even) {
 		background-color: $clr-bg-gray;
 	}
+
 	&:nth-of-type(odd) {
 		background-color: $clr-white;
 	}
+
 	&:last-of-type {
 		padding-bottom: 400px;
 	}
 
 	& > * {
 	transform: skew(0deg, 11.77deg);
-
 	}
 }
 
 // UTILITY CLASS' STYLES
 
 .container {
-	max-width: 2160px;
+	max-width: 1577px;
 	width: 100%;
 	padding: 0px 30px;
-	margin: auto;
-
+	margin: 0 auto;
 	transform: skew(0deg, 11.77deg);
-}
+	border-left: 1px solid red;
+	border-right: 1px solid red;
 
+}
 
 .btn {
 	background-color: $clr-main;
@@ -191,10 +195,23 @@ section {
 	color: $clr-main;
 }
 
-
 .section-2 {
-	padding-top: 500px;
-	padding-bottom: 450px;
+	padding-top: 410px;
+	padding-bottom: 370px;
+
+	@media (max-width: $breakpoint-medium) {
+		padding-top: 330px;
+		padding-bottom: 720px;
+	}
+
+	@media(max-width: $breakpoint-medium-small) {
+		padding-top: 410px;
+		padding-bottom: 760px;
+	}
+
+	@media (max-width: $breakpoint-small) {
+		padding-bottom: 780px;
+	}
 
 	& .section-content {
 		position: relative;
@@ -202,19 +219,54 @@ section {
 		& .img {
 			position: absolute;
 		
-			&-broken-egg {
-				top: -400px;
-				right: 0;
-			}
+
 
 			&-phone {
-				top: -400px;
+		    top: -270px;
 				right: 400px;
+				max-width: 25%;
+
+				@media(max-width: $breakpoint-large) {
+					right: 0;
+					max-width: 355px;
+				}
+
+				@media(max-width: $breakpoint-medium) {
+					top: unset;
+
+				}
+				@media(max-width: $breakpoint-medium-small) {
+					top: 220px;
+					right: 50%;
+					transform: translateX(50%);
+				}
+
+				@media(max-width: $breakpoint-small) {
+					top: 240px;
+				}
+
+
 			}
 
 			&-waves {
 				top: -150px;
 				left: 180px;
+
+				@media(max-width: $breakpoint-large) {
+					left: 0;
+				}
+
+				@media(max-width: $breakpoint-medium-small) {
+					left: unset;
+					right: 0;
+					top: 40px;
+					transform: translateY(-50%);
+				}
+
+				@media (max-width: 600px) {
+					transform: unset;
+					top: 120px;
+				}
 			}
 		}
 	}
@@ -222,18 +274,96 @@ section {
 	& .img {
 		position: absolute;
 
+		&-broken-egg {
+			top: 32%;
+  		right: 100px;
+  		max-width: 14%;
+
+  		@media(max-width: $breakpoint-large) {
+		    max-width: 210px;
+		    right: 45%;
+		    top: 20%;
+		    top: unset;
+		    bottom: 45px;
+		    left: 40%;
+  		}
+
+  		
+
+  		@media(max-width: $breakpoint-medium) {
+  			top: 20%;
+    		left: 70%;
+  		}
+  		@media(max-width: $breakpoint-small) {
+  			max-width: 40%;
+  		}
+		}
+
 		&-fruit {
-			left: -120px;
-			top: 350px;
+	    max-width: 23%;
+	    left: -70px;
+
+	    @media(max-width: $breakpoint-large) {
+	    	max-width: 345px;
+	    }
+
+	    @media(max-width: $breakpoint-medium-small) {
+	    	top: 110px;
+	    }
+
+	    @media (max-width: $breakpoint-small) {
+	    	max-width: 60%;
+	    }
 		}
 	}
 }
 
 .section-3 {
 
+	@media (max-width: $breakpoint-medium) {
+		padding-bottom: 600px;
+	}
+
+	.img {
+		position: absolute;
+
+		&-plate {
+			width: 620px;
+			max-width: 35.25%;
+			top: 100px;
+
+			@media(max-width: $breakpoint-medium) {
+				top: unset;
+				max-width: 60%;
+				// bottom: 10px;
+			}
+		}
+
+		&-table {
+			width: 250px;
+			max-width: 14.5%;
+			right: 0;
+  		bottom: 220px;
+
+  		@media(max-width: $breakpoint-medium) {
+				top: unset;
+				max-width: 25%;
+				bottom: 170px;
+			}
+
+			@media(max-width: $breakpoint-medium-small) {
+				bottom: unset;
+			}
+		}
+	}
+
 	.section-content {
 		position: relative;
 		padding-left: 40%;
+
+		@media(max-width: $breakpoint-medium) {
+			padding-left: unset;
+		}
 
 		.img {
 			position: absolute;
@@ -241,25 +371,37 @@ section {
 			&-waves {
 				left: 40%;
 				top: 300px;
+
+				@media(max-width: $breakpoint-medium) {
+					top: 0;
+					left: unset;
+					right: 0;
+					top: 40px;
+					transform: translateY(-50%);
+				}
+
+				@media(max-width: $breakpoint-medium-small) {
+					top: -100px;
+				}
 			}
 
 			&-mushroom {
+		   	width: 240px;
+    		max-width: 17.5%;
 				top: -350px;
 				left: 55%;
-			}
 
-			&-table {
-				right: 20px;
-				top: -40px;
+				@media(max-width: $breakpoint-medium) {
+					max-width: 24%;
+					top: -200px;
+    			left: 60%;
+				}
+
+				@media(max-width: $breakpoint-medium-small) {
+					max-width: 27%;
+					left: 0;
+				}
 			}
 		}
-
 	}
-		.img {
-			position: absolute;
-
-			&-plate {
-				top: 100px;
-			}
-		}
 }
