@@ -156,12 +156,110 @@ section > * {
   transform: skew(0deg, 11.77deg);
 }
 
+.section1 {
+  position: relative;
+}
+
 .container {
   max-width: 2160px;
   width: 100%;
   padding: 0px 30px;
   margin: auto;
   transform: skew(0deg, 11.77deg);
+}
+
+.section-1 {
+  position: relative;
+}
+.section-1 .flexpart1 {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  position: relative;
+}
+.section-1 .flexpart1 img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.section-1 .flexpart1 .text {
+  align-items: center;
+  margin: 0 auto;
+}
+.section-1 .flexpart1 .text input {
+  padding: 14px 90px;
+}
+.section-1 .flexpart1 .text a {
+  border-radius: 10px;
+  border: 1px solid #9b9a9a;
+  padding: 8px 35px;
+  margin-right: 2px;
+  background-color: #5fb709;
+  color: white;
+  display: inline-block;
+  position: relative;
+}
+.section-1 .leaf {
+  position: absolute;
+  top: -30px;
+  right: 170px;
+}
+
+.section-4 {
+  position: relative;
+}
+.section-4 .flexpart2 {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  z-index: 4;
+}
+.section-4 .flexpart2 img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.section-4 .flexpart2 .uber {
+  padding-left: 200px;
+}
+.section-4 .food1 {
+  position: absolute;
+  left: 325px;
+  bottom: -140px;
+}
+.section-4 .food2 {
+  position: absolute;
+  bottom: -100px;
+  left: 30px;
+}
+.section-4 .food3 {
+  position: absolute;
+  top: 10px;
+  left: 90px;
+}
+.section-4 .location1 {
+  position: absolute;
+  bottom: 120px;
+}
+.section-4 .location2 {
+  position: absolute;
+  bottom: 280px;
+  left: 285px;
+}
+.section-4 .location3 {
+  position: absolute;
+  top: 50px;
+  right: 65px;
+}
+.section-4:after {
+  content: "";
+  background-image: url(img/line.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 10px;
+  z-index: -1;
 }
 
 .site-header {
