@@ -26,51 +26,51 @@ body {
   border: 1px solid black;
 }
 
-.h2 {
+h2 {
   font: 5rem/7rem "Kayak Sans", sans-serif;
   font-weight: 700;
   letter-spacing: -1px;
   margin: 0 0 40px;
 }
 @media (max-width: 1200px) {
-  .h2 {
+  h2 {
     font-size: 4rem;
     line-height: 5rem;
   }
 }
 @media (max-width: 800px) {
-  .h2 {
+  h2 {
     font-size: 3rem;
     line-height: 4rem;
   }
 }
 @media (max-width: 500px) {
-  .h2 {
+  h2 {
     font-size: 2.5rem;
     line-height: 3rem;
   }
 }
 
-.h3 {
+h3 {
   font: 3.5rem/7rem "Kayak Sans", sans-serif;
   font-weight: 700;
   letter-spacing: -1px;
   margin: 0 0 25px;
 }
 @media (max-width: 1200px) {
-  .h3 {
+  h3 {
     font-size: 3rem;
     line-height: 6rem;
   }
 }
 @media (max-width: 800px) {
-  .h3 {
+  h3 {
     font-size: 2.5rem;
     line-height: 5rem;
   }
 }
 @media (max-width: 500px) {
-  .h3 {
+  h3 {
     font-size: 2rem;
     line-height: 4rem;
   }
@@ -117,6 +117,7 @@ input[type=submit] {
   color: #ffffff;
   font-size: 2.3rem;
   border-radius: 10px;
+  padding: 20px 45px;
 }
 
 textarea {
@@ -140,9 +141,10 @@ footer .container {
 }
 
 section {
-  position: relative;
-  padding: 200px 0;
+  padding: 400px 0;
   transform: skew(0deg, -11.77deg);
+  position: relative;
+  z-index: 1;
 }
 section:nth-of-type(even) {
   background-color: #f4f5f7;
@@ -153,11 +155,14 @@ section:nth-of-type(odd) {
 section:last-of-type {
   padding-bottom: 400px;
 }
+section > * {
+  transform: skew(0deg, 11.77deg);
+}
 
 .container {
-  max-width: 85%;
+  max-width: 2160px;
   width: 100%;
-  padding: 0px 9px;
+  padding: 0px 30px;
   margin: auto;
   transform: skew(0deg, 11.77deg);
 }
@@ -186,6 +191,74 @@ section:last-of-type {
   top: 0%;
   right: 0%;
   padding-top: 100%;
+}
+
+.btn {
+  background-color: #5fb709;
+  color: #ffffff;
+  font-size: 2.3rem;
+  border-radius: 10px;
+  padding: 20px 45px;
+}
+
+.text-lead {
+  color: #5fb709;
+}
+
+.section-2 {
+  padding-top: 500px;
+  padding-bottom: 450px;
+}
+.section-2 .section-content {
+  position: relative;
+}
+.section-2 .section-content .img {
+  position: absolute;
+}
+.section-2 .section-content .img-broken-egg {
+  top: -400px;
+  right: 0;
+}
+.section-2 .section-content .img-phone {
+  top: -400px;
+  right: 400px;
+}
+.section-2 .section-content .img-waves {
+  top: -150px;
+  left: 180px;
+}
+.section-2 .img {
+  position: absolute;
+}
+.section-2 .img-fruit {
+  left: -120px;
+  top: 350px;
+}
+
+.section-3 .section-content {
+  position: relative;
+  padding-left: 40%;
+}
+.section-3 .section-content .img {
+  position: absolute;
+}
+.section-3 .section-content .img-waves {
+  left: 40%;
+  top: 300px;
+}
+.section-3 .section-content .img-mushroom {
+  top: -350px;
+  left: 55%;
+}
+.section-3 .section-content .img-table {
+  right: 20px;
+  top: -40px;
+}
+.section-3 .img {
+  position: absolute;
+}
+.section-3 .img-plate {
+  top: 100px;
 }
 
 /*# sourceMappingURL=style.css.map */
