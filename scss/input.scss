@@ -7,7 +7,7 @@ $font-family-global: 'Kayak Sans', sans-serif;
 
 $clr-white: #ffffff; // section-bg, footer-text, button-text
 $clr-black: #000000; // text-color
-$clr-bg-gray: #f4f5f7; // section-bg
+$clr-bg-gray: #f4f5f7; // section-bg 
 $clr-bg-footer: #262626; //footer-bg
 $clr-text-input: #585858; //input-text-color
 
@@ -205,7 +205,10 @@ section {
  flex-wrap:wrap;
  align-items: center;
  position: relative;
-
+ 
+ .burger {
+ 	padding-left: 10%;
+ }
 
  img {
    max-width: 100%;
@@ -234,8 +237,9 @@ section {
 }
 .leaf {
 	position: absolute;
-	top: -30px;
-  right: 170px;
+
+	top: -60px;
+    right: 300px;
 }
 }
 
@@ -254,7 +258,10 @@ section {
  }
 
  .uber {
- 	padding-left: 200px
+ 	padding-left: 200px;
+   @media( max-width: 500px) {
+   padding-left: 0px;
+   }
  }
 }
 
@@ -262,47 +269,65 @@ section {
  	position: absolute;
  	left: 325px;
  	bottom: -140px;
+ 	max-width: 100%;
+ 	@media( max-width: 1280px) {
+    right: 325px;
+    left: auto;
+ 	}
+    @media( max-width: 800px) {
+    right: 100px;
+    bottom: auto;
+   }
+   @media( max-width: 500px) {
+   bottom: -350px;
+   }
  }
 
  .food2 {
    position: absolute;
-   bottom: -100px;
-   left: 30px;
+   bottom: -80px;
+   left: 65px;
+   max-width: 100%;
+  @media( max-width: 500px) {
+   bottom: -150px;
+   }
  }
 
  .food3 {
    position: absolute;
    top: 10px;
-   left: 90px;
+   left: 200px;
+   max-width: 100%;
+   @media( max-width: 1280px) {
+   right: 200px;
+   left: auto;
+   top: -300px;
+   }
+   @media( max-width: 500px) {
+   right: 50px;
+   }
  }
  
- .location1 {
+ .line {
  	position: absolute;
- 	bottom: 120px;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    top: 20%;
+    left: 0px;
+    @media( max-width: 1700px) {
+    top: 30%;
+    }
+    @media( max-width: 1300px) {
+    top: 45%;
+    }
+    @media( max-width: 500px) {
+    top: 60%;
+   }
+    
  }
+ 
 
- .location2 {
-  position: absolute;
-  bottom: 280px;
-  left: 285px;
- }
- .location3 {
-  position: absolute;
-  top: 50px;
-  right: 65px;
- }
-  &:after {
-	content: '';
-	background-image: url(img/line.png);
-	background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-	width: 100%;
-	height: 100%;
-	position: absolute;
-    top: 10px;
-    z-index: -1;
-  }
 }
 
 
@@ -310,7 +335,7 @@ section {
 	position: relative;
 	max-width: 100%;
 	z-index: 5;
-	
+	padding: 200px 0 100px 0;
 	.header-content{
 		max-width: 40%;
 		position: relative;
@@ -319,66 +344,59 @@ section {
 		span{
 			color: $clr-main;
 		}
-		@media (max-width: 900px){
-			padding-top: 50px;
-			max-width: 56%;
+		@media (max-width: $breakpoint-medium){
+			max-width: 50%;
 		}
+		@media (max-width: 548px){
+			max-width: 100%;
+		}
+		@media (max-width: $breakpoint-small){
+			max-width: 100%;
+		}
+	}
+	.header-btn{
+		@media (max-width: $breakpoint-medium){
+			padding: 3px 7px;
+		}
+
 	}
 	.btn-sign-up{
 		position: absolute;
 		top: -63%;
 		right: 1%;
 		z-index: 2;
-		@media (max-width: 900px){
-			right: 70%;
-		}
+		
+		
 
 	}
-	.header-btn{
-		@media (max-width: 900px){
-			padding: 10px 20px;
-		}
-		@media (max-width: 480px){
-			padding: 5px 10px;
-		}
-	}
+	
 	.header-background{
 		position: absolute;
 		top: 0;
 		right: 0;
 		z-index: -1;
+		transform: skew(0deg, 11.77deg);
 		@media( max-width: 1920px) {
 		max-width: 60%;
-	}
+		}
 	}
 	.onion{
 		position: absolute;
-		left: 38%;
-		bottom: 10%;
-		transform: translate(-38%, -10%);
-		@media (max-width: 1500px){
-			bottom: 0%;
-		}
-		@media (max-width: 900px){
-			left: 70%;
-		}
-	}
-	.plant{
-		position: absolute;
 		left: 42%;
-		z-index: -1;
-		bottom: 32%;
-		transform: translate(-42%, -32%);
-		@media( max-width: 1500px) {
-			bottom: 23%;
+		bottom: 2%;
+		transform: translate(-42%, -2%) skew(0deg, 11.77deg);
+		max-width: 40%;
+		@media (max-width: $breakpoint-large){
+			max-width: 15%;
 		}
-		@media (max-width: 900px){
-			bottom: 22%;
-			left: 76%;
+		@media (max-width: $breakpoint-medium){
+			left: 77%;
+		}
+		@media (max-width: $breakpoint-small){
+			left: 30%;
+			bottom: 75%;
 		}
 	}
-
-
 }
 
 .btn {
@@ -620,17 +638,18 @@ section {
 				}
 			}
 		}
-	}
+	} 
 }
 
+ 
 .section-6{
 	padding: 200px 0 100px 0;
 	.deliveries-wrapper{
 		display: flex;
 		margin-left: -60px;
-		padding-left: 200px;
 		.col-1-2{
 			padding-left: 60px;
+			margin-bottom: 60px;
 			width: 50%;
 			.delivery-icon{
 				background-size: contain;
@@ -642,6 +661,12 @@ section {
 			h3{
 				color: $clr-main;
 			}
+			@media (max-width: $breakpoint-medium){
+			width: 100%;
+		}
+		}
+		@media (max-width: $breakpoint-medium){
+			flex-direction: column;
 		}
 	}
 }
