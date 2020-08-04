@@ -23,7 +23,6 @@ body {
   color: #000000;
   background-color: #f4f5f7;
   font-size: 21px;
-  border: 1px solid black;
 }
 
 h2 {
@@ -125,6 +124,7 @@ textarea {
 }
 
 header {
+  padding: 200px 0;
   transform: skew(0deg, -11.77deg);
   background-color: #f4f5f7;
 }
@@ -168,11 +168,9 @@ section > * {
 }
 
 .site-header {
+  position: relative;
   max-width: 100%;
   z-index: 5;
-}
-.site-header .content-wrapper {
-  width: 100%;
 }
 .site-header .header-content {
   max-width: 40%;
@@ -181,16 +179,30 @@ section > * {
 .site-header .header-content span {
   color: #5fb709;
 }
-.site-header::after {
-  content: "";
-  background-image: url(./img/bihead.png);
-  width: 100%;
-  background-size: contain;
-  background-repeat: no-repeat;
+.site-header .btn-sign-up {
   position: absolute;
-  top: 0%;
-  right: 0%;
-  padding-top: 100%;
+  top: -63%;
+  right: 1%;
+  z-index: 2;
+}
+.site-header .header-background {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+}
+.site-header .onion {
+  position: absolute;
+  left: 50%;
+  bottom: 10%;
+  transform: translate(-50%, -10%);
+}
+.site-header .plant {
+  position: absolute;
+  left: 52%;
+  z-index: -1;
+  bottom: 30%;
+  transform: translate(-52%, -30%);
 }
 
 .btn {
