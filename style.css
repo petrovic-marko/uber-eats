@@ -173,6 +173,11 @@ section > * {
   align-items: center;
   position: relative;
 }
+@media (max-width: 1145px) {
+  .section-1 .flexpart1 .image {
+    margin: 0 auto;
+  }
+}
 .section-1 .flexpart1 .burger {
   padding-left: 10%;
 }
@@ -186,6 +191,21 @@ section > * {
 }
 .section-1 .flexpart1 .text input {
   padding: 14px 90px;
+}
+@media (max-width: 585px) {
+  .section-1 .flexpart1 .text input {
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 430px) {
+  .section-1 .flexpart1 .text input {
+    padding: 14px 50px;
+  }
+}
+@media (max-width: 350px) {
+  .section-1 .flexpart1 .text input {
+    padding: 14px 30px;
+  }
 }
 .section-1 .flexpart1 .text a {
   border-radius: 10px;
@@ -201,6 +221,11 @@ section > * {
   position: absolute;
   top: -60px;
   right: 300px;
+}
+@media (max-width: 500px) {
+  .section-1 .leaf {
+    right: 0px;
+  }
 }
 
 .section-4 {
