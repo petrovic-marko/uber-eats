@@ -212,56 +212,92 @@ section > * {
   align-items: center;
   z-index: 4;
 }
-.section-4 .flexpart2 .foodtext {
-  padding-left: 10%;
-}
 .section-4 .flexpart2 img {
   max-width: 100%;
   max-height: 100%;
 }
 .section-4 .flexpart2 .uber {
-  padding-left: 40%;
+  padding-left: 200px;
+}
+@media (max-width: 500px) {
+  .section-4 .flexpart2 .uber {
+    padding-left: 0px;
+  }
 }
 .section-4 .food1 {
   position: absolute;
   left: 325px;
   bottom: -140px;
+  max-width: 100%;
+}
+@media (max-width: 1280px) {
+  .section-4 .food1 {
+    right: 325px;
+    left: auto;
+  }
+}
+@media (max-width: 800px) {
+  .section-4 .food1 {
+    right: 100px;
+    bottom: auto;
+  }
+}
+@media (max-width: 500px) {
+  .section-4 .food1 {
+    bottom: -350px;
+  }
 }
 .section-4 .food2 {
   position: absolute;
-  bottom: -100px;
-  left: 30px;
+  bottom: -80px;
+  left: 65px;
+  max-width: 100%;
+}
+@media (max-width: 500px) {
+  .section-4 .food2 {
+    bottom: -150px;
+  }
 }
 .section-4 .food3 {
   position: absolute;
   top: 10px;
-  left: 90px;
+  left: 200px;
+  max-width: 100%;
 }
-.section-4 .location1 {
+@media (max-width: 1280px) {
+  .section-4 .food3 {
+    right: 200px;
+    left: auto;
+    top: -300px;
+  }
+}
+@media (max-width: 500px) {
+  .section-4 .food3 {
+    right: 50px;
+  }
+}
+.section-4 .line {
   position: absolute;
-  bottom: 120px;
-}
-.section-4 .location2 {
-  position: absolute;
-  bottom: 280px;
-  left: 285px;
-}
-.section-4 .location3 {
-  position: absolute;
-  top: 50px;
-  right: 65px;
-}
-.section-4:after {
-  content: "";
-  background-image: url(img/line.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
   width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 10px;
-  z-index: -1;
+  max-width: 100%;
+  height: auto;
+  top: 20%;
+  left: 0px;
+}
+@media (max-width: 1700px) {
+  .section-4 .line {
+    top: 30%;
+  }
+}
+@media (max-width: 1300px) {
+  .section-4 .line {
+    top: 45%;
+  }
+}
+@media (max-width: 500px) {
+  .section-4 .line {
+    top: 60%;
+  }
 }
 
 .site-header {

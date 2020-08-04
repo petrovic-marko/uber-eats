@@ -7,7 +7,7 @@ $font-family-global: 'Kayak Sans', sans-serif;
 
 $clr-white: #ffffff; // section-bg, footer-text, button-text
 $clr-black: #000000; // text-color
-$clr-bg-gray: #f4f5f7; // section-bg
+$clr-bg-gray: #f4f5f7; // section-bg 
 $clr-bg-footer: #262626; //footer-bg
 $clr-text-input: #585858; //input-text-color
 
@@ -251,17 +251,16 @@ section {
  align-items: center;
  z-index: 4;
 
- .foodtext {
- 	padding-left: 10%;
- }
-
  img {
  	max-width: 100%;
  	max-height: 100%;
  }
 
  .uber {
- 	padding-left: 40%;
+ 	padding-left: 200px;
+   @media( max-width: 500px) {
+   padding-left: 0px;
+   }
  }
 }
 
@@ -269,47 +268,65 @@ section {
  	position: absolute;
  	left: 325px;
  	bottom: -140px;
+ 	max-width: 100%;
+ 	@media( max-width: 1280px) {
+    right: 325px;
+    left: auto;
+ 	}
+    @media( max-width: 800px) {
+    right: 100px;
+    bottom: auto;
+   }
+   @media( max-width: 500px) {
+   bottom: -350px;
+   }
  }
 
  .food2 {
    position: absolute;
-   bottom: -100px;
-   left: 30px;
+   bottom: -80px;
+   left: 65px;
+   max-width: 100%;
+  @media( max-width: 500px) {
+   bottom: -150px;
+   }
  }
 
  .food3 {
    position: absolute;
    top: 10px;
-   left: 90px;
+   left: 200px;
+   max-width: 100%;
+   @media( max-width: 1280px) {
+   right: 200px;
+   left: auto;
+   top: -300px;
+   }
+   @media( max-width: 500px) {
+   right: 50px;
+   }
  }
  
- .location1 {
+ .line {
  	position: absolute;
- 	bottom: 120px;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    top: 20%;
+    left: 0px;
+    @media( max-width: 1700px) {
+    top: 30%;
+    }
+    @media( max-width: 1300px) {
+    top: 45%;
+    }
+    @media( max-width: 500px) {
+    top: 60%;
+   }
+    
  }
+ 
 
- .location2 {
-  position: absolute;
-  bottom: 280px;
-  left: 285px;
- }
- .location3 {
-  position: absolute;
-  top: 50px;
-  right: 65px;
- }
-  &:after {
-	content: '';
-	background-image: url(img/line.png);
-	background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-	width: 100%;
-	height: 100%;
-	position: absolute;
-    top: 10px;
-    z-index: -1;
-  }
 }
 
 
@@ -340,6 +357,7 @@ section {
 		@media (max-width: $breakpoint-medium){
 			padding: 3px 7px;
 		}
+
 	}
 	.btn-sign-up{
 		position: absolute;
@@ -603,6 +621,7 @@ section {
 	} 
 }
 
+ 
 .section-6{
 	padding: 200px 0 100px 0;
 	.deliveries-wrapper{
