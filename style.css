@@ -161,10 +161,10 @@ section > * {
 }
 
 .container {
-  max-width: 2160px;
+  max-width: 90%;
   width: 100%;
   padding: 0px 30px;
-  margin: auto;
+  margin: 0 auto;
   transform: skew(0deg, 11.77deg);
 }
 
@@ -274,11 +274,32 @@ section > * {
 .site-header .header-content span {
   color: #5fb709;
 }
+@media (max-width: 900px) {
+  .site-header .header-content {
+    padding-top: 50px;
+    max-width: 56%;
+  }
+}
 .site-header .btn-sign-up {
   position: absolute;
   top: -63%;
   right: 1%;
   z-index: 2;
+}
+@media (max-width: 900px) {
+  .site-header .btn-sign-up {
+    right: 70%;
+  }
+}
+@media (max-width: 900px) {
+  .site-header .header-btn {
+    padding: 10px 20px;
+  }
+}
+@media (max-width: 480px) {
+  .site-header .header-btn {
+    padding: 5px 10px;
+  }
 }
 .site-header .header-background {
   position: absolute;
@@ -286,11 +307,26 @@ section > * {
   right: 0;
   z-index: -1;
 }
+@media (max-width: 1920px) {
+  .site-header .header-background {
+    max-width: 60%;
+  }
+}
 .site-header .onion {
   position: absolute;
   left: 38%;
   bottom: 10%;
   transform: translate(-38%, -10%);
+}
+@media (max-width: 1500px) {
+  .site-header .onion {
+    bottom: 0%;
+  }
+}
+@media (max-width: 900px) {
+  .site-header .onion {
+    left: 70%;
+  }
 }
 .site-header .plant {
   position: absolute;
@@ -298,6 +334,17 @@ section > * {
   z-index: -1;
   bottom: 32%;
   transform: translate(-42%, -32%);
+}
+@media (max-width: 1500px) {
+  .site-header .plant {
+    bottom: 23%;
+  }
+}
+@media (max-width: 900px) {
+  .site-header .plant {
+    bottom: 22%;
+    left: 76%;
+  }
 }
 
 .btn {

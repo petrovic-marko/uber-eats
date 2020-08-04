@@ -12,6 +12,8 @@ $clr-text-input: #585858; //input-text-color
 
 $clr-main: #5fb709; // lead-text, button-bg
 
+
+$breakpoint-large: 1920px;
 $breakpoint-large: 1200px;
 $breakpoint-medium: 800px;
 $breakpoint-small: 500px;
@@ -177,10 +179,10 @@ section {
 	position: relative;
 }
 .container {
-	max-width: 2160px;
+	max-width: 90%;
 	width: 100%;
 	padding: 0px 30px;
-	margin: auto;
+	margin: 0 auto;
 	transform: skew(0deg, 11.77deg);
 }
 
@@ -307,24 +309,49 @@ section {
 		span{
 			color: $clr-main;
 		}
+		@media (max-width: 900px){
+			padding-top: 50px;
+			max-width: 56%;
+		}
 	}
 	.btn-sign-up{
 		position: absolute;
 		top: -63%;
 		right: 1%;
 		z-index: 2;
+		@media (max-width: 900px){
+			right: 70%;
+		}
+
+	}
+	.header-btn{
+		@media (max-width: 900px){
+			padding: 10px 20px;
+		}
+		@media (max-width: 480px){
+			padding: 5px 10px;
+		}
 	}
 	.header-background{
 		position: absolute;
 		top: 0;
 		right: 0;
 		z-index: -1;
+		@media( max-width: 1920px) {
+		max-width: 60%;
+	}
 	}
 	.onion{
 		position: absolute;
 		left: 38%;
 		bottom: 10%;
 		transform: translate(-38%, -10%);
+		@media (max-width: 1500px){
+			bottom: 0%;
+		}
+		@media (max-width: 900px){
+			left: 70%;
+		}
 	}
 	.plant{
 		position: absolute;
@@ -332,7 +359,15 @@ section {
 		z-index: -1;
 		bottom: 32%;
 		transform: translate(-42%, -32%);
+		@media( max-width: 1500px) {
+			bottom: 23%;
+		}
+		@media (max-width: 900px){
+			bottom: 22%;
+			left: 76%;
+		}
 	}
+
 
 }
 
