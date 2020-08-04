@@ -309,7 +309,7 @@ section {
 	position: relative;
 	max-width: 100%;
 	z-index: 5;
-	
+	padding: 200px 0 100px 0;
 	.header-content{
 		max-width: 40%;
 		position: relative;
@@ -318,9 +318,19 @@ section {
 		span{
 			color: $clr-main;
 		}
-		@media (max-width: 900px){
-			padding-top: 50px;
-			max-width: 56%;
+		@media (max-width: $breakpoint-medium){
+			max-width: 50%;
+		}
+		@media (max-width: 548px){
+			max-width: 100%;
+		}
+		@media (max-width: $breakpoint-small){
+			max-width: 100%;
+		}
+	}
+	.header-btn{
+		@media (max-width: $breakpoint-medium){
+			padding: 3px 7px;
 		}
 	}
 	.btn-sign-up{
@@ -328,56 +338,38 @@ section {
 		top: -63%;
 		right: 1%;
 		z-index: 2;
-		@media (max-width: 900px){
-			right: 70%;
-		}
+		
+		
 
 	}
-	.header-btn{
-		@media (max-width: 900px){
-			padding: 10px 20px;
-		}
-		@media (max-width: 480px){
-			padding: 5px 10px;
-		}
-	}
+	
 	.header-background{
 		position: absolute;
 		top: 0;
 		right: 0;
 		z-index: -1;
+		transform: skew(0deg, 11.77deg);
 		@media( max-width: 1920px) {
 		max-width: 60%;
-	}
+		}
 	}
 	.onion{
 		position: absolute;
-		left: 38%;
-		bottom: 10%;
-		transform: translate(-38%, -10%);
-		@media (max-width: 1500px){
-			bottom: 0%;
-		}
-		@media (max-width: 900px){
-			left: 70%;
-		}
-	}
-	.plant{
-		position: absolute;
 		left: 42%;
-		z-index: -1;
-		bottom: 32%;
-		transform: translate(-42%, -32%);
-		@media( max-width: 1500px) {
-			bottom: 23%;
+		bottom: 2%;
+		transform: translate(-42%, -2%) skew(0deg, 11.77deg);
+		max-width: 40%;
+		@media (max-width: $breakpoint-large){
+			max-width: 15%;
 		}
-		@media (max-width: 900px){
-			bottom: 22%;
-			left: 76%;
+		@media (max-width: $breakpoint-medium){
+			left: 77%;
+		}
+		@media (max-width: $breakpoint-small){
+			left: 30%;
+			bottom: 75%;
 		}
 	}
-
-
 }
 
 .btn {
