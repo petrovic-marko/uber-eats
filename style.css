@@ -773,6 +773,9 @@ section > * {
   display: flex;
   flex-wrap: wrap;
 }
+.footer .footer-wrapper .store .img-container .appstore {
+  display: inline-block;
+}
 .footer .footer-wrapper .store .img-container img {
   margin-bottom: 25px;
   padding-right: 10px;
