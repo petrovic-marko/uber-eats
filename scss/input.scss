@@ -206,8 +206,8 @@ section {
 	margin: 0 auto;
 
 	transform: skew(0deg, 11.77deg);
-	border-left: 1px solid red;
-	border-right: 1px solid red;
+	// border-left: 1px solid red;
+	// border-right: 1px solid red;
 
 }
 
@@ -736,7 +736,7 @@ section {
 		}
 
 		& .text-content {
-			border: 1px solid blue;
+			// border: 1px solid blue;
 
 			& .img-waves {
 				transform: translateX(-90px);
