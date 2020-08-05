@@ -172,7 +172,7 @@ section > * {
   align-items: center;
   position: relative;
 }
-@media (max-width: 1145px) {
+@media (max-width: 1252px) {
   .section-1 .flexpart1 .image {
     margin: 0 auto;
   }
@@ -188,9 +188,19 @@ section > * {
   align-items: center;
   margin: 0 auto;
   max-width: 700px;
+  /*a {
+  	 border-radius: 10px;
+  	 border: 1px solid #9b9a9a;;
+  	 padding: 8px 35px;
+  	 margin-right: 2px;
+  	 background-color: #5fb709;
+  	 color: white;
+  	 display: inline-block;
+  	 position: relative;
+  }*/
 }
 .section-1 .flexpart1 .text input {
-  padding: 14px 90px;
+  padding: 20px 200px 20px 10px;
 }
 @media (max-width: 585px) {
   .section-1 .flexpart1 .text input {
@@ -206,16 +216,6 @@ section > * {
   .section-1 .flexpart1 .text input {
     padding: 14px 30px;
   }
-}
-.section-1 .flexpart1 .text a {
-  border-radius: 10px;
-  border: 1px solid #9b9a9a;
-  padding: 8px 35px;
-  margin-right: 2px;
-  background-color: #5fb709;
-  color: white;
-  display: inline-block;
-  position: relative;
 }
 .section-1 .leaf {
   position: absolute;

@@ -206,16 +206,15 @@ section {
  align-items: center;
  position: relative;
 
-
-
-  .image {
-  @media( max-width: 1145px) {
+ .image {
+ 	  @media( max-width: 1252px) {
   margin: 0 auto;
    }
  }
 
+
  .burger {
- 	padding-left: 10%;
+  padding-left: 10%;
  }
 
  img {
@@ -229,7 +228,7 @@ section {
  	max-width: 700px;
 
 	  input {
-	  	padding: 14px 90px;
+	  	padding: 20px 200px 20px 10px;
         @media( max-width: 585px) {
         margin-bottom: 30px;
    }
@@ -242,7 +241,7 @@ section {
  }
 
 
-	  a {
+	  /*a {
 			 border-radius: 10px;
 			 border: 1px solid #9b9a9a;;
 			 padding: 8px 35px;
@@ -251,7 +250,7 @@ section {
 			 color: white;
 			 display: inline-block;
 			 position: relative;
-		}
+		}*/
 }
 }
 .leaf {
