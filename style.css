@@ -165,7 +165,7 @@ section > * {
 
 .section-1 {
   position: relative;
-  padding: 200px 0;
+  padding: 200px 0 50px;
 }
 .section-1 .flexpart1 {
   display: flex;
