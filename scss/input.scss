@@ -367,7 +367,6 @@ section {
 	position: relative;
 	max-width: 100%;
 	z-index: 5;
-	// padding: 200px 0 100px 0;
 	.header-content{
 		padding: 100px 0;
 		max-width: 100%;
@@ -383,6 +382,12 @@ section {
 		}
 		span{
 			color: $clr-main;
+		}
+		p{
+			max-width: 50%;
+			@media (max-width: 500px) {
+				max-width: 100%;
+			}
 		}
 	}
 	.header-btn{
@@ -425,7 +430,7 @@ section {
 		}
 		@media (max-width: $breakpoint-small){
 			left: 30%;
-			bottom: 88%;
+			bottom: 96%;
 		}
 	}
 }
@@ -736,10 +741,12 @@ section {
 
 		}
 		.partners{
-			order: 2;
+			@media (max-width: 900px){
+				order: 2;
+			}
 		}
 		.language{
-			order: 1;
+			
 			.select-box{
 				position: relative;
 					.language-dropdown{
@@ -763,6 +770,7 @@ section {
 				padding: 0;
 				width: 15px;
 			}
+			
 		}
 		
 			.social-icons{
@@ -772,6 +780,9 @@ section {
 					width: 35px;
 					height: 35px;
 				}	
+			}
+			@media (max-width: $breakpoint-medium){
+				order: 1;
 			}
 		}
 		.store{
