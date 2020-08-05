@@ -288,8 +288,8 @@ section > * {
 }
 .section-4 .food3 {
   position: absolute;
-  top: 10px;
-  left: 200px;
+  top: -50px;
+  left: 400px;
   max-width: 100%;
 }
 @media (max-width: 1519px) {
@@ -316,8 +316,9 @@ section > * {
   width: 100%;
   max-width: 100%;
   height: auto;
-  top: 20%;
+  top: 30%;
   left: 0px;
+  z-index: -1;
 }
 @media (max-width: 1700px) {
   .section-4 .line {
