@@ -303,7 +303,7 @@ section {
  }
 
  .uber {
- 	padding-left: 200px;
+ 	padding-left: 100px;
    @media( max-width: 500px) {
    padding-left: 0px;
    }
@@ -315,6 +315,7 @@ section {
  	left: 325px;
  	bottom: -140px;
  	max-width: 100%;
+ 	width: 200px;
  	@media( max-width: 1280px) {
     right: 325px;
     left: auto;
@@ -331,8 +332,9 @@ section {
  .food2 {
    position: absolute;
    bottom: -80px;
-   left: 65px;
+   left: 100px;
    max-width: 100%;
+   width: 200px;
   @media( max-width: 500px) {
    bottom: -150px;
    }
@@ -344,8 +346,9 @@ section {
    top: -50px;
    left: 400px;
    max-width: 100%;
+   width: 250px;
 
-   @media( max-width: 1519px) {
+   @media( max-width: 1417px) {
    	top: 10px;
    	right: 200px;
    	left: auto;
@@ -353,7 +356,8 @@ section {
    @media( max-width: 1280px) {
    right: 200px;
    left: auto;
-   top: -230px;
+   top: -220px;
+   width: 200px;
    }
    @media( max-width: 500px) {
    right: 50px;
