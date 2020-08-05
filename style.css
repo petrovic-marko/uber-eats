@@ -364,6 +364,14 @@ section > * {
 .site-header .header-content span {
   color: #5fb709;
 }
+.site-header .header-content p {
+  max-width: 50%;
+}
+@media (max-width: 500px) {
+  .site-header .header-content p {
+    max-width: 100%;
+  }
+}
 @media (max-width: 900px) {
   .site-header .header-btn {
     padding: 3px 7px;
@@ -407,7 +415,7 @@ section > * {
 @media (max-width: 500px) {
   .site-header .onion {
     left: 30%;
-    bottom: 88%;
+    bottom: 96%;
   }
 }
 
@@ -715,11 +723,10 @@ section > * {
 .footer .footer-wrapper .col-1-5 a:hover {
   text-decoration: underline;
 }
-.footer .footer-wrapper .partners {
-  order: 2;
-}
-.footer .footer-wrapper .language {
-  order: 1;
+@media (max-width: 900px) {
+  .footer .footer-wrapper .partners {
+    order: 2;
+  }
 }
 .footer .footer-wrapper .language .select-box {
   position: relative;
@@ -752,6 +759,11 @@ section > * {
   padding-right: 10px;
   width: 35px;
   height: 35px;
+}
+@media (max-width: 900px) {
+  .footer .footer-wrapper .language {
+    order: 1;
+  }
 }
 .footer .footer-wrapper .store h5 {
   color: #a8a8a8;
