@@ -203,7 +203,7 @@ section > * {
 .section-1 .flexpart1 .text input {
   padding: 20px 200px 20px 10px;
 }
-@media (max-width: 585px) {
+@media (max-width: 900px) {
   .section-1 .flexpart1 .text input {
     margin-bottom: 30px;
   }
@@ -216,6 +216,11 @@ section > * {
 @media (max-width: 350px) {
   .section-1 .flexpart1 .text input {
     padding: 14px 30px;
+  }
+}
+@media (max-width: 900px) {
+  .section-1 .flexpart1 .text .btn {
+    padding: 3px 7px;
   }
 }
 .section-1 .leaf {
@@ -305,7 +310,7 @@ section > * {
   .section-4 .food3 {
     right: 200px;
     left: auto;
-    top: -300px;
+    top: -230px;
   }
 }
 @media (max-width: 500px) {

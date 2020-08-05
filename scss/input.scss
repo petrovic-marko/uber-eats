@@ -230,7 +230,7 @@ section {
 
 	  input {
 	  	padding: 20px 200px 20px 10px;
-        @media( max-width: 585px) {
+        @media( max-width: 900px) {
         margin-bottom: 30px;
    }
         @media( max-width: 430px) {
@@ -240,7 +240,11 @@ section {
         padding: 14px 30px;
    }
  }
-
+    .btn {
+    	   @media( max-width: 900px) {
+    	   	    padding: 3px 7px;
+    	   }
+    }
 
 	  /*a {
 			 border-radius: 10px;
@@ -334,7 +338,7 @@ section {
    @media( max-width: 1280px) {
    right: 200px;
    left: auto;
-   top: -300px;
+   top: -230px;
    }
    @media( max-width: 500px) {
    right: 50px;
