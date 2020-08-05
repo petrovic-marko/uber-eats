@@ -729,6 +729,9 @@ section > * {
     padding-left: 0;
   }
 }
+.section-5 .section-content .text-content {
+  border: 1px solid transparent;
+}
 .section-5 .section-content .text-content .img-waves {
   transform: translateX(-90px);
 }
