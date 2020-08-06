@@ -251,8 +251,20 @@ section > * {
   top: -60px;
   right: 300px;
 }
+.section-1:hover .leaf {
+  -webkit-animation: leaftop 2s 1 normal ease-out;
+  animation: leaftop 2s 1 normal ease-out;
+}
+@-webkit-keyframes leaftop {
+  0% {
+    right: 0px;
+  }
+  100% {
+    right: 300px;
+  }
+}
 @media (max-width: 500px) {
-  .section-1 .leaf {
+  .section-1:hover .leaf {
     right: 0px;
   }
 }
@@ -367,6 +379,42 @@ section > * {
 @media (max-width: 500px) {
   .section-4 .line {
     top: 60%;
+  }
+}
+.section-4:hover .food1 {
+  -webkit-animation: foodsa 2s 1 normal ease-out;
+  animation: foodsa 2s 1 normal ease-out;
+}
+@-webkit-keyframes foodsa {
+  0% {
+    bottom: -400px;
+  }
+  100% {
+    bottom: -140px;
+  }
+}
+.section-4:hover .food2 {
+  -webkit-animation: foodsa 2s 1 normal ease-out;
+  animation: foodsa 2s 1 normal ease-out;
+}
+@-webkit-keyframes foodsa {
+  0% {
+    bottom: -400px;
+  }
+  100% {
+    bottom: -80px;
+  }
+}
+.section-4:hover .food3 {
+  -webkit-animation: fooda 2s 1 normal ease-out;
+  animation: fooda 2s 1 normal ease-out;
+}
+@-webkit-keyframes fooda {
+  0% {
+    top: -200px;
+  }
+  100% {
+    top: -50px;
   }
 }
 

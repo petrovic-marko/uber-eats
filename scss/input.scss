@@ -273,12 +273,25 @@ section {
 }
 .leaf {
 	position: absolute;
-
-	top: -60px;
+    top: -60px;
     right: 300px;
+ }
+
+ &:hover .leaf {
+    -webkit-animation: leaftop 2s 1  normal ease-out;
+    animation: leaftop 2s 1  normal ease-out;
+    @-webkit-keyframes leaftop {
+    0% {
+        right:0px;
+    }
+    100% {
+        right: 300px;
+    }
+}
     @media( max-width: 500px) {
     right: 0px;
    }
+
  }
 
 }
@@ -382,8 +395,44 @@ section {
    }
     
  }
- 
- 
+  &:hover .food1 {
+  	-webkit-animation: foodsa 2s 1  normal ease-out;
+    animation: foodsa 2s 1  normal ease-out;
+    @-webkit-keyframes foodsa {
+    0% {
+        bottom: -400px;
+    }
+    100% {
+        bottom: -140px;
+    }
+}
+  }
+
+&:hover .food2 {
+  	-webkit-animation: foodsa 2s 1  normal ease-out;
+    animation: foodsa 2s 1  normal ease-out;
+    @-webkit-keyframes foodsa {
+    0% {
+        bottom: -400px;
+    }
+    100% {
+        bottom: -80px;
+    }
+}
+  }
+
+&:hover .food3 {
+  	-webkit-animation: fooda 2s 1  normal ease-out;
+    animation: fooda 2s 1  normal ease-out;
+    @-webkit-keyframes fooda {
+    0% {
+        top: -200px;
+    }
+    100% {
+        top: -50px;
+    }
+}
+  } 
 }
 
 
