@@ -215,8 +215,16 @@ section {
 	transform: skew(0deg, 11.77deg);
 	// border-left: 1px solid red;
 	// border-right: 1px solid red;
-
 }
+
+@keyframes slideIn {
+			0% {
+				top: -100%;
+			}
+			100% {
+				top: 0;
+			}
+		}
 
 .section-1 {
  position: relative;
@@ -234,8 +242,7 @@ section {
    }
  }
 
-
- .burger {
+ .burger { 
   padding-left: 10%;
  }
 
@@ -251,7 +258,7 @@ section {
 
 	  input {
 	  	padding: 20px 200px 20px 10px;
-        @media( max-width: 585px) {
+        @media( max-width: 900px) {
         margin-bottom: 30px;
    }
         @media( max-width: 430px) {
@@ -261,7 +268,11 @@ section {
         padding: 14px 30px;
    }
  }
-
+    .btn {
+    	   @media( max-width: 900px) {
+    	   	    padding: 3px 7px;
+    	   }
+    }
 
 	  /*a {
 			 border-radius: 10px;
@@ -277,12 +288,25 @@ section {
 }
 .leaf {
 	position: absolute;
-
-	top: -60px;
+    top: -60px;
     right: 300px;
+ }
+
+ &:hover .leaf {
+    -webkit-animation: leaftop 2s 1  normal ease-out;
+    animation: leaftop 2s 1  normal ease-out;
+    @-webkit-keyframes leaftop {
+    0% {
+        right:0px;
+    }
+    100% {
+        right: 300px;
+    }
+}
     @media( max-width: 500px) {
     right: 0px;
    }
+
  }
 
 }
@@ -306,7 +330,7 @@ section {
  }
 
  .uber {
- 	padding-left: 200px;
+ 	padding-left: 100px;
    @media( max-width: 500px) {
    padding-left: 0px;
    }
@@ -318,6 +342,7 @@ section {
  	left: 325px;
  	bottom: -140px;
  	max-width: 100%;
+ 	width: 200px;
  	@media( max-width: 1280px) {
     right: 325px;
     left: auto;
@@ -334,20 +359,23 @@ section {
  .food2 {
    position: absolute;
    bottom: -80px;
-   left: 65px;
+   left: 100px;
    max-width: 100%;
+   width: 200px;
   @media( max-width: 500px) {
    bottom: -150px;
    }
  }
+
 
  .food3 {
    position: absolute;
    top: -50px;
    left: 400px;
    max-width: 100%;
+   width: 250px;
 
-   @media( max-width: 1519px) {
+   @media( max-width: 1417px) {
    	top: 10px;
    	right: 200px;
    	left: auto;
@@ -355,13 +383,14 @@ section {
    @media( max-width: 1280px) {
    right: 200px;
    left: auto;
-   top: -300px;
+   top: -220px;
+   width: 200px;
    }
    @media( max-width: 500px) {
    right: 50px;
    }
  }
- 
+
  .line {
  	position: absolute;
     width: 100%;
@@ -381,15 +410,51 @@ section {
    }
     
  }
- 
- 
+  &:hover .food1 {
+  	-webkit-animation: foodsa 2s 1  normal ease-out;
+    animation: foodsa 2s 1  normal ease-out;
+    @-webkit-keyframes foodsa {
+    0% {
+        bottom: -400px;
+    }
+    100% {
+        bottom: -140px;
+    }
 }
+  }
 
+&:hover .food2 {
+  	-webkit-animation: foodsa 2s 1  normal ease-out;
+    animation: foodsa 2s 1  normal ease-out;
+    @-webkit-keyframes foodsa {
+    0% {
+        bottom: -400px;
+    }
+    100% {
+        bottom: -80px;
+    }
+}
+  }
+
+&:hover .food3 {
+  	-webkit-animation: fooda 2s 1  normal ease-out;
+    animation: fooda 2s 1  normal ease-out;
+    @-webkit-keyframes fooda {
+    0% {
+        top: -200px;
+    }
+    100% {
+        top: -50px;
+    }
+}
+  } 
+}
 
 .site-header{
 	position: relative;
 	max-width: 100%;
 	z-index: 5;
+	
 	.header-content{
 		padding: 100px 0;
 		max-width: 100%;
@@ -401,7 +466,7 @@ section {
 			}
 			@media (max-width: 500px){
 				max-width: 60%;
-			}
+			} 
 		}
 		span{
 			color: $clr-main;
@@ -423,9 +488,7 @@ section {
 		position: absolute;
 		top: 1%;
 		right: 1%;
-		z-index: 2;
-		
-		
+		z-index: 2		
 
 	}
 	
@@ -435,6 +498,8 @@ section {
 		right: 0;
 		z-index: -1;
 		transform: skew(0deg, 11.77deg);
+		animation: slideIn 2s ease;
+
 		@media( max-width: 1920px) {
 		max-width: 60%;
 		}
@@ -466,6 +531,11 @@ section {
 	border-radius: 10px;
 	padding: 20px 45px;
 	margin-bottom: 40px;
+	transition: all .4s ease;
+	&:hover{
+		background-color: #13AE19;
+		border-radius: 40px;
+	}
 }
 
 .text-lead {
@@ -1007,6 +1077,7 @@ section {
 			padding-left: 60px;
 			margin-bottom: 60px;
 			width: 50%;
+			padding-right: 10px;
 			&:not(:first-of-type){
 				border-left: 3px solid #d9dadb;
 			}
@@ -1086,7 +1157,7 @@ section {
 				}
 			.sphere{
 				position: absolute;
-				top: 15%;
+				top: 5px;
 				left: 0%;
 				padding: 0;
 				width: 15px;
@@ -1100,6 +1171,10 @@ section {
 					padding-right: 10px;
 					width: 35px;
 					height: 35px;
+					transition: all 0.4s ease;
+					&:hover{
+						transform: scale(1.1);
+					}
 				}	
 			}
 			@media (max-width: $breakpoint-medium){
@@ -1124,30 +1199,13 @@ section {
 				}
 			}
 		}
-		
+	}
+	.copyright{
+		color:#4c4c4c;
+		text-transform: capitalize;
 	}
 }
 
 
-@-webkit-keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
 
-  to {
-    opacity: 1;
-  }
-}
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
 
-  to {
-    opacity: 1;
-  }
-}
-.animate__fadeIn {
-  -webkit-animation-name: fadeIn;
-  animation-name: fadeIn;
-}
