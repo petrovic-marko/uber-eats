@@ -468,6 +468,10 @@ section > * {
   border-radius: 10px;
   padding: 20px 45px;
   margin-bottom: 40px;
+  transition: all 0.4s ease;
+}
+.btn:hover {
+  background-color: #13AE19;
 }
 
 .text-lead {
@@ -1078,6 +1082,10 @@ section > * {
   padding-right: 10px;
   width: 35px;
   height: 35px;
+  transition: all 0.4s ease;
+}
+.footer .footer-wrapper .language .social-icons img:hover {
+  transform: scale(1.1);
 }
 @media (max-width: 900px) {
   .footer .footer-wrapper .language {
