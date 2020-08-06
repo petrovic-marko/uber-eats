@@ -44,6 +44,22 @@ h2 {
     line-height: 4rem;
   }
 }
+@media (max-width: 500px) {
+  h2 {
+    margin-bottom: 45px;
+  }
+}
+@media (max-width: 400px) {
+  h2 {
+    margin-bottom: 35px;
+  }
+}
+@media (max-width: 350px) {
+  h2 {
+    margin-bottom: 30px;
+  }
+}
+
 h3 {
   font: 4rem/5.1rem "Kayak Sans", sans-serif;
   font-weight: 700;
@@ -458,23 +474,26 @@ section > * {
 
 .section-2 {
   padding-top: 410px;
+  padding-top: calc(410px - 120px);
   padding-bottom: 370px;
 }
 @media (max-width: 900px) {
   .section-2 {
     padding-top: 330px;
+    padding-top: calc(330px - 120px);
     padding-bottom: 720px;
   }
 }
 @media (max-width: 700px) {
   .section-2 {
-    padding-top: 410px;
     padding-bottom: 760px;
   }
 }
 @media (max-width: 500px) {
   .section-2 {
     padding-bottom: 780px;
+    padding-top: 300px;
+    padding-top: calc(300px - 120px);
   }
 }
 .section-2 .section-content {
@@ -482,6 +501,23 @@ section > * {
 }
 .section-2 .section-content-text {
   max-width: 700px;
+}
+@media (max-width: 700px) {
+  .section-2 .section-content-text .img-waves-wide {
+    display: none;
+  }
+}
+.section-2 .section-content-text .img-waves-narrow {
+  display: none;
+  margin-bottom: 30px;
+}
+@media (max-width: 700px) {
+  .section-2 .section-content-text .img-waves-narrow {
+    display: block;
+  }
+}
+.section-2 .section-content-text h2 {
+  padding-top: 120px;
 }
 @media (max-width: 1100px) {
   .section-2 .section-content-text {
@@ -498,8 +534,18 @@ section > * {
     max-width: 100%;
   }
 }
+.section-2 .section-content-text .img-waves-small {
+  display: none;
+  margin-bottom: 35px;
+}
+@media (max-width: 400px) {
+  .section-2 .section-content-text .img-waves-small {
+    display: block;
+  }
+}
 .section-2 .section-content .img-phone {
   top: -270px;
+  top: calc(-270px + 120px);
   right: 400px;
   max-width: 25%;
 }
@@ -518,6 +564,7 @@ section > * {
   .section-2 .section-content .img-phone {
     right: 50%;
     transform: translateX(50%);
+    bottom: -690px;
   }
 }
 .section-2 .section-content .img-waves {
@@ -537,21 +584,24 @@ section > * {
     left: unset;
   }
 }
+@media (max-width: 400px) {
+  .section-2 .section-content .img-waves {
+    display: none;
+  }
+}
 .section-2 .img {
   position: absolute;
 }
 .section-2 .img-broken-egg {
-  top: 32%;
+  top: 540px;
   right: 100px;
   max-width: 14%;
 }
 @media (max-width: 1500px) {
   .section-2 .img-broken-egg {
     max-width: 210px;
-    bottom: 22.5%;
-    right: 50px;
-    top: unset;
-    left: unset;
+    top: 100px;
+    left: 300px;
   }
 }
 @media (max-width: 900px) {
@@ -562,6 +612,7 @@ section > * {
 }
 @media (max-width: 700px) {
   .section-2 .img-broken-egg {
+    top: 150px;
     left: unset;
     right: 0;
   }
@@ -582,7 +633,7 @@ section > * {
 }
 @media (max-width: 700px) {
   .section-2 .img-fruit {
-    top: 110px;
+    top: 60px;
   }
 }
 @media (max-width: 500px) {
@@ -594,6 +645,7 @@ section > * {
 @media (max-width: 900px) {
   .section-3 {
     padding-bottom: 600px;
+    padding-top: 250px;
   }
 }
 .section-3 .img {
@@ -640,12 +692,12 @@ section > * {
 .section-3 .section-content-text {
   max-width: 700px;
 }
+.section-3 .section-content .img-waves {
+  position: static;
+  margin-bottom: 30px;
+}
 .section-3 .section-content .img {
   position: absolute;
-}
-.section-3 .section-content .img-waves {
-  left: 40%;
-  top: 300px;
 }
 @media (max-width: 900px) {
   .section-3 .section-content .img-waves {
@@ -667,17 +719,40 @@ section > * {
   top: -350px;
   left: 55%;
 }
+@media (max-width: 1200px) {
+  .section-3 .section-content .img-mushroom {
+    width: 199.5px;
+    max-width: unset;
+  }
+}
 @media (max-width: 900px) {
   .section-3 .section-content .img-mushroom {
     max-width: 24%;
-    top: -200px;
-    left: 60%;
+    top: -220px;
+    left: unset;
+    right: 0;
   }
 }
 @media (max-width: 700px) {
   .section-3 .section-content .img-mushroom {
-    max-width: 27%;
-    left: 0;
+    max-width: 28.5%;
+  }
+}
+@media (max-width: 600px) {
+  .section-3 .section-content .img-mushroom {
+    max-width: unset;
+    width: 153.891px;
+  }
+}
+@media (max-width: 500px) {
+  .section-3 .section-content .img-mushroom {
+    max-width: 34.975%;
+  }
+}
+@media (max-width: 400px) {
+  .section-3 .section-content .img-mushroom {
+    max-width: unset;
+    width: 118.906px;
   }
 }
 
@@ -934,7 +1009,7 @@ section > * {
 @media (max-width: 1500px) {
   .section-5 .img-rosemary {
     bottom: unset;
-    top: 600px;
+    top: 500px;
   }
 }
 @media (max-width: 800px) {
@@ -1079,6 +1154,27 @@ section > * {
 .footer .footer-wrapper .store .img-container img {
   margin-bottom: 25px;
   padding-right: 10px;
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.animate__fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
 }
 
 /*# sourceMappingURL=style.css.map */
