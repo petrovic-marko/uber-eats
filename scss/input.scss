@@ -208,7 +208,6 @@ section {
 	transform: skew(0deg, 11.77deg);
 	// border-left: 1px solid red;
 	// border-right: 1px solid red;
-
 }
 
 @keyframes slideIn {
@@ -482,9 +481,7 @@ section {
 		position: absolute;
 		top: 1%;
 		right: 1%;
-		z-index: 2;
-		
-		
+		z-index: 2		
 
 	}
 	
@@ -1139,8 +1136,9 @@ section {
 				}
 			}
 		}
-		
+	}
+	.copyright{
+		color:#4c4c4c;
+		text-transform: capitalize;
 	}
 }
-
-
