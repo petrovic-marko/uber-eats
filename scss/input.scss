@@ -211,6 +211,15 @@ section {
 
 }
 
+@keyframes slideIn {
+			0% {
+				top: -100%;
+			}
+			100% {
+				top: 0;
+			}
+		}
+
 .section-1 {
  position: relative;
  padding: 200px 0 50px;
@@ -435,11 +444,11 @@ section {
   } 
 }
 
-
 .site-header{
 	position: relative;
 	max-width: 100%;
 	z-index: 5;
+	
 	.header-content{
 		padding: 100px 0;
 		max-width: 100%;
@@ -451,7 +460,7 @@ section {
 			}
 			@media (max-width: 500px){
 				max-width: 60%;
-			}
+			} 
 		}
 		span{
 			color: $clr-main;
@@ -485,6 +494,8 @@ section {
 		right: 0;
 		z-index: -1;
 		transform: skew(0deg, 11.77deg);
+		animation: slideIn 2s ease;
+
 		@media( max-width: 1920px) {
 		max-width: 60%;
 		}
@@ -516,6 +527,11 @@ section {
 	border-radius: 10px;
 	padding: 20px 45px;
 	margin-bottom: 40px;
+	transition: all .4s ease;
+	&:hover{
+		background-color: #13AE19;
+		border-radius: 40px;
+	}
 }
 
 .text-lead {
@@ -1001,6 +1017,7 @@ section {
 			padding-left: 60px;
 			margin-bottom: 60px;
 			width: 50%;
+			padding-right: 10px;
 			&:not(:first-of-type){
 				border-left: 3px solid #d9dadb;
 			}
@@ -1080,7 +1097,7 @@ section {
 				}
 			.sphere{
 				position: absolute;
-				top: 15%;
+				top: 5px;
 				left: 0%;
 				padding: 0;
 				width: 15px;
@@ -1094,6 +1111,10 @@ section {
 					padding-right: 10px;
 					width: 35px;
 					height: 35px;
+					transition: all 0.4s ease;
+					&:hover{
+						transform: scale(1.1);
+					}
 				}	
 			}
 			@media (max-width: $breakpoint-medium){
@@ -1121,3 +1142,5 @@ section {
 		
 	}
 }
+
+
